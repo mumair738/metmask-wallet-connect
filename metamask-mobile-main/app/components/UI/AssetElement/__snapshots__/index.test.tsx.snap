@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AssetElement should render correctly 1`] = `
+<TouchableOpacity
+  disabled={false}
+  onLongPress={[Function]}
+  onPress={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "height": 64,
+    }
+  }
+  testID="asset-DAI"
+>
+  <View
+    style={
+      {
+        "alignItems": "flex-end",
+        "flexShrink": 0,
+      }
+    }
+  />
+</TouchableOpacity>
+`;
