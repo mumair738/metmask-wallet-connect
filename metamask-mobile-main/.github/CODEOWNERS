@@ -1,0 +1,239 @@
+# Lines starting with '#' are comments.
+# Each line is a file pattern followed by one or more owners.
+
+# Design System Team
+app/component-library/               @MetaMask/design-system-engineers
+tailwind.config.js                   @MetaMask/design-system-engineers
+
+# Platform Team
+.github/CODEOWNERS                                          @MetaMask/mobile-platform
+patches/                                                    @MetaMask/mobile-platform
+app/core/Analytics/index.ts                                 @MetaMask/mobile-platform
+app/core/Analytics/MetaMetrics.constants.ts                 @MetaMask/mobile-platform
+app/core/Analytics/MetaMetrics.test.ts                      @MetaMask/mobile-platform
+app/core/Analytics/MetaMetrics.ts                           @MetaMask/mobile-platform
+app/core/Analytics/MetaMetrics.types.ts                     @MetaMask/mobile-platform
+app/core/Analytics/MetaMetricsPrivacySegmentPlugin.ts       @MetaMask/mobile-platform
+app/core/Analytics/MetaMetricsPrivacySegmentPlugin.test.ts  @MetaMask/mobile-platform
+app/core/Analytics/MetaMetricsTestUtils.test.ts             @MetaMask/mobile-platform
+app/core/Analytics/MetaMetricsTestUtils.ts                  @MetaMask/mobile-platform
+app/core/Analytics/MetricsEventBuilder.test.ts              @MetaMask/mobile-platform
+app/core/Analytics/MetricsEventBuilder.ts                   @MetaMask/mobile-platform
+app/util/metrics/                                           @MetaMask/mobile-platform
+app/components/hooks/useMetrics/                            @MetaMask/mobile-platform
+app/selectors/featureFlagController/*                       @MetaMask/mobile-platform
+app/selectors/featureFlagController/minimumAppVersion/      @MetaMask/mobile-platform
+app/store/migrations/                                       @MetaMask/mobile-platform
+bitrise.yml                                                 @MetaMask/mobile-platform
+ios/Podfile.lock                                            @MetaMask/mobile-platform
+app/components/Views/BrowserTab/BrowserTab.tsx              @MetaMask/mobile-platform
+app/components/Nav/NavigationProvider                       @MetaMask/mobile-platform
+app/components/Nav/ControllersGate                          @MetaMask/mobile-platform
+app/components/Views/Root                                   @MetaMask/mobile-platform
+app/core/NavigationService                                  @MetaMask/mobile-platform
+app/core/Engine/messengers/                                 @MetaMask/mobile-platform
+app/core/Engine/utils/                                      @MetaMask/mobile-platform
+app/core/Engine/constants/                                  @MetaMask/mobile-platform
+app/core/Engine/Engine.test.ts                              @MetaMask/mobile-platform
+app/core/Engine/Engine.ts                                   @MetaMask/mobile-platform
+app/core/Engine/index.ts                                    @MetaMask/mobile-platform
+app/core/Engine/README.md                                   @MetaMask/mobile-platform
+app/core/Engine/types.ts                                    @MetaMask/mobile-platform
+app/core/Engine/controllers/remote-feature-flag-controller/ @MetaMask/mobile-platform
+app/core/DeeplinkManager                                    @MetaMask/mobile-platform
+scripts/build.sh                                            @MetaMask/mobile-platform
+
+# Platform & Snaps Code Fencing File
+metro.transform.js @MetaMask/mobile-platform @MetaMask/core-platform
+
+# Ramps Team
+app/components/UI/Ramp/              @MetaMask/ramp
+app/reducers/fiatOrders/             @MetaMask/ramp
+
+# Card Team
+app/components/UI/Card/              @MetaMask/card
+app/core/redux/slices/card/          @MetaMask/card
+
+# Confirmation Team
+app/components/Views/confirmations                          @MetaMask/confirmations
+app/components/Views/confirmations/external/staking          @MetaMask/confirmations @MetaMask/metamask-earn
+app/core/Engine/controllers/approval-controller             @MetaMask/confirmations
+app/core/Engine/controllers/gas-fee-controller              @MetaMask/confirmations
+app/core/Engine/controllers/signature-controller            @MetaMask/confirmations
+app/core/Engine/controllers/transaction-controller          @MetaMask/confirmations
+app/core/Analytics/events/confirmations                     @MetaMask/confirmations
+ppom                                                        @MetaMask/confirmations
+app/selectors/featureFlagController/confirmations/          @MetaMask/confirmations
+
+# Wallet integrations Team
+app/actions/sdk/                                            @MetaMask/wallet-integrations
+app/components/Approvals/WalletConnectApproval/             @MetaMask/wallet-integrations
+app/components/Views/SDK/                                   @MetaMask/wallet-integrations
+app/components/Views/WalletConnectSessions/                 @MetaMask/wallet-integrations
+app/core/BackgroundBridge/                                  @MetaMask/wallet-integrations
+app/core/RPCMethods/                                        @MetaMask/wallet-integrations
+app/core/SDKConnect/                                        @MetaMask/wallet-integrations
+app/core/SDKConnectV2/                                      @MetaMask/wallet-integrations
+app/core/WalletConnect/                                     @MetaMask/wallet-integrations
+app/reducers/sdk/                                           @MetaMask/wallet-integrations
+app/util/permissions/                                       @MetaMask/wallet-integrations
+app/util/walletconnect.js                                   @MetaMask/wallet-integrations
+
+# Accounts Team
+app/core/Encryptor/                                         @MetaMask/accounts-engineers
+app/core/Engine/controllers/accounts-controller             @MetaMask/accounts-engineers
+app/core/Engine/messengers/accounts-controller-messenger    @MetaMask/accounts-engineers
+app/core/SnapKeyring                                        @MetaMask/accounts-engineers
+**/Identity/**                                              @MetaMask/accounts-engineers
+**/identity/**                                              @MetaMask/accounts-engineers
+
+# Co-owned by accounts and mobile-core-ux
+app/components/Views/AccountSelector                        @MetaMask/accounts-engineers @MetaMask/mobile-core-ux
+app/components/UI/EvmAccountSelectorList                    @MetaMask/accounts-engineers @MetaMask/mobile-core-ux
+
+# Multichain Accounts
+**/multichain-accounts/**                                   @MetaMask/accounts-engineers
+**/MultichainAccounts/**                                    @MetaMask/accounts-engineers
+**/multichainAccounts/**                                    @MetaMask/accounts-engineers
+
+# Swaps Team
+app/components/UI/Swaps              @MetaMask/swaps-engineers
+app/components/UI/Bridge              @MetaMask/swaps-engineers
+
+# Notifications Team
+app/components/Views/Notifications @MetaMask/notifications
+app/components/Views/Settings/NotificationsSettings @MetaMask/notifications
+**/Notifications/** @MetaMask/notifications
+**/Notification/** @MetaMask/notifications
+**/notifications/** @MetaMask/notifications
+**/notification/** @MetaMask/notifications
+
+# LavaMoat Team
+ses.cjs                              @MetaMask/supply-chain
+patches/react-native+0.*.patch       @MetaMask/supply-chain
+
+# Portfolio Team
+app/components/hooks/useTokenSearchDiscovery @MetaMask/portfolio
+app/core/Engine/controllers/TokenSearchDiscoveryController @MetaMask/portfolio
+
+# Core Platform Team
+**/snaps/**                          @MetaMask/core-platform
+**/Snaps/**                          @MetaMask/core-platform
+
+# Co-owned by Confirmations team and Core Platform team
+app/components/UI/TemplateRenderer   @MetaMask/confirmations @MetaMask/core-platform
+
+
+# Earn Team
+app/components/UI/Stake              @MetaMask/metamask-earn
+app/core/Engine/controllers/earn-controller @MetaMask/metamask-earn
+app/core/Engine/messengers/earn-controller-messenger @MetaMask/metamask-earn
+app/selectors/earnController         @MetaMask/metamask-earn
+**/Earn/**                           @MetaMask/metamask-earn
+**/earn/**                           @MetaMask/metamask-earn
+
+# Rewards Team
+app/core/Engine/controllers/rewards-controller @MetaMask/rewards
+app/core/Engine/messengers/rewards-controller-messenger @MetaMask/rewards
+app/selectors/rewardscontroller.ts   @MetaMask/rewards
+app/selectors/featureFlagController/rewards @MetaMask/rewards
+**/Rewards/**                        @MetaMask/rewards
+**/rewards/**                        @MetaMask/rewards
+
+# Perps Team
+app/components/UI/Perps/             @MetaMask/perps
+app/components/UI/WalletAction/*perps* @MetaMask/perps
+app/core/Engine/controllers/perps-controller @MetaMask/perps
+app/core/Engine/messengers/perps-controller-messenger @MetaMask/perps
+app/core/DeeplinkManager/Handlers/handlePerpsUrl.ts         @MetaMask/perps
+**/Perps/**                          @MetaMask/perps
+**/perps/**                          @MetaMask/perps
+
+# Assets Team
+app/components/hooks/useIsOriginalNativeTokenSymbol @MetaMask/metamask-assets
+app/components/hooks/useTokenBalancesController @MetaMask/metamask-assets
+app/components/hooks/useTokenBalance.tsx @MetaMask/metamask-assets
+app/components/hooks/useSafeChains.ts @MetaMask/metamask-assets
+app/components/UI/Assets @MetaMask/metamask-assets
+app/components/UI/AssetOverview @MetaMask/metamask-assets
+app/components/UI/Collectibles @MetaMask/metamask-assets
+app/components/UI/CollectibleContractElement @MetaMask/metamask-assets
+app/components/UI/CollectivelContractInformation @MetaMask/metamask-assets
+app/components/UI/CollectibleContractOverview @MetaMask/metamask-assets
+app/components/UI/CollectibleContracts @MetaMask/metamask-assets
+app/components/UI/CollectibleDetectionModal @MetaMask/metamask-assets
+app/components/UI/CollectibleMedia @MetaMask/metamask-assets
+app/components/UI/CollectibleModal @MetaMask/metamask-assets
+app/components/UI/CollectibleOverview @MetaMask/metamask-assets
+app/components/UI/ConfirmAddAsset @MetaMask/metamask-assets
+app/components/UI/DeFiPositions @MetaMask/metamask-assets
+app/components/UI/Tokens @MetaMask/metamask-assets
+app/components/Views/AddAsset @MetaMask/metamask-assets
+app/components/Views/Asset @MetaMask/metamask-assets
+app/components/Views/AssetDetails @MetaMask/metamask-assets
+app/components/Views/AssetHideConfirmation @MetaMask/metamask-assets
+app/components/Views/AssetOptions @MetaMask/metamask-assets
+app/components/Views/Collectible @MetaMask/metamask-assets
+app/components/Views/CollectibleView @MetaMask/metamask-assets
+app/components/Views/DetectedTokens @MetaMask/metamask-assets
+app/components/Views/NFTAutoDetectionModal @MetaMask/metamask-assets
+app/components/Views/NftDetails @MetaMask/metamask-assets
+app/reducers/collectibles @MetaMask/metamask-assets
+app/core/Engine/controllers/defi-positions-controller @MetaMask/metamask-assets
+app/core/Engine/messengers/defi-positions-controller-messenger @MetaMask/metamask-assets
+app/selectors/assets @MetaMask/metamask-assets
+
+# UX Team
+app/components/Views/AccountActions              @MetaMask/mobile-core-ux
+app/components/Views/AccountSelector             @MetaMask/mobile-core-ux
+app/components/Views/AddressQRCode               @MetaMask/mobile-core-ux
+app/components/Views/EditAccountName             @MetaMask/mobile-core-ux
+app/components/Views/LockScreen                  @MetaMask/mobile-core-ux
+app/components/Views/Login                       @MetaMask/mobile-core-ux
+app/components/Views/NetworkConnect              @MetaMask/mobile-core-ux
+app/components/Views/NetworkSelector             @MetaMask/mobile-core-ux
+app/components/Views/QRAccountDisplay            @MetaMask/mobile-core-ux
+app/components/Views/QRScanner                   @MetaMask/mobile-core-ux
+app/components/Views/Settings                    @MetaMask/mobile-core-ux
+app/components/Views/TermsAndConditions          @MetaMask/mobile-core-ux
+app/components/Views/MultichainTransactionsView  @MetaMask/mobile-core-ux
+app/components/Views/UnifiedTransactionsView     @MetaMask/mobile-core-ux
+app/components/UI/MultichainTransactionListItem  @MetaMask/mobile-core-ux
+app/components/UI/TransactionActionModal         @MetaMask/mobile-core-ux
+app/components/UI/TransactionElement             @MetaMask/mobile-core-ux
+app/components/UI/Transactions                   @MetaMask/mobile-core-ux
+app/reducers/experimentalSettings                @MetaMask/mobile-core-ux
+app/reducers/modals                              @MetaMask/mobile-core-ux
+app/reducers/navigation                          @MetaMask/mobile-core-ux
+app/reducers/privacy                             @MetaMask/mobile-core-ux
+app/reducers/settings                            @MetaMask/mobile-core-ux
+
+# Transactions Team
+app/components/Views/transactions @MetaMask/transactions
+
+# Web3auth Team
+app/core/Engine/messengers/seedless-onboarding-controller-messenger @MetaMask/web3auth
+app/core/Engine/controllers/seedless-onboarding-controller  @MetaMask/web3auth
+app/core/OAuthService                                       @MetaMask/web3auth
+app/components/Views/Onboarding                             @MetaMask/web3auth
+app/components/Views/OnboardingCarousel                     @MetaMask/web3auth
+app/components/Views/OnboardingSuccess                      @MetaMask/web3auth
+app/reducers/onboarding                                     @MetaMask/web3auth
+
+# Delegation team
+app/core/Engine/controllers/gator-permissions-controller              @MetaMask/delegation
+app/core/Engine/messengers/gator-permissions-controller-messenger     @MetaMask/delegation
+
+# QA Team - E2E Framework
+e2e/api-mocking/                             @MetaMask/qa
+e2e/fixtures/                                @MetaMask/qa
+e2e/framework/                               @MetaMask/qa
+e2e/pages/                                   @MetaMask/qa
+e2e/utils/                                   @MetaMask/qa
+e2e/viewHelper.ts                            @MetaMask/qa
+
+# Snapshots – no code owners assigned
+# This allows anyone with write access to approve changes to any *.snap files.
+# ⚠️ Note: Leaving this rule unassigned disables Code Owner review enforcement for snapshot files.
+# ⚠️ Important: This rule must remain at the bottom of the CODEOWNERS file to take precedence over more specific path-based rules.
+**/*.snap
