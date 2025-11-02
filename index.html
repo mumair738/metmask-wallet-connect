@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask Mobile Repository Browser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MetaMask Mobile Repository Browser</h1>
+            <p>Explore the complete MetaMask mobile codebase from your GitHub repository</p>
+        </header>
+
+        <div class="repo-info">
+            <h2>Repository Information</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Repository:</strong>
+                    <a href="https://github.com/mumair738/metmask-wallet-connect.git" target="_blank">metmask-wallet-connect</a>
+                </div>
+                <div class="info-item">
+                    <strong>Source:</strong> MetaMask/metamask-mobile (main branch)
+                </div>
+                <div class="info-item">
+                    <strong>Last Updated:</strong> <span id="last-updated"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="directory-browser">
+            <h2>Directory Structure</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search files and folders..." />
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div class="path-navigator">
+                <button id="backBtn">← Back</button>
+                <span id="currentPath">/</span>
+            </div>
+
+            <div id="fileList" class="file-list">
+                <div class="loading">Loading directory structure...</div>
+            </div>
+        </div>
+
+        <div class="file-viewer">
+            <h2>File Content</h2>
+            <div id="fileContent" class="file-content">
+                <p>Select a file to view its contents</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
